@@ -6,4 +6,4 @@ pipeline:
     environment:
       - DOCKER_USERNAME=ukhomeofficedigital+acp_clamav
     commands:
-      - ./build.sh
+      - build.sh
