@@ -7,4 +7,4 @@ pipeline:
       - DOCKER_HOST=tcp://172.17.0.1:2375
       - DOCKER_USERNAME=ukhomeofficedigital+acp_clamav
     commands:
-      - bin/build.sh
+      - bin/build.sh $DRONE_COMMIT_SHA
