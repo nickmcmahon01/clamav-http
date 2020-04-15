@@ -5,8 +5,8 @@ pipeline:
       - docker_password
     environment:
       - DOCKER_USERNAME=ukhomeofficedigital+acp_clamav
+      - DOCKER_BUILD_CONTEXT=clamav
     registry: quay.io
     repo: quay.io/ukhomeofficedigital/acp_clamav
-    context: clamav
     tags:
       - ${DRONE_COMMIT_SHA}
