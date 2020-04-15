@@ -7,6 +7,6 @@ pipeline:
       - DOCKER_USERNAME=ukhomeofficedigital+acp_clamav
     registry: quay.io
     repo: quay.io/ukhomeofficedigital/acp_clamav
-    workdir: clamav
+    context: clamav
     tags:
       - ${DRONE_COMMIT_SHA}
