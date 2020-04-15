@@ -1,6 +1,6 @@
 pipeline:
   images_to_quay:
-    image: quay.io/ukhomeofficedigital/drone-docker
+    image: docker:17.09.1
     secrets:
       - docker_password
     environment:
