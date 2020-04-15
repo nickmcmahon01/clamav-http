@@ -1,11 +1,12 @@
-clamav_image_to_quay:
-  image: quay.io/ukhomeofficedigital/drone-docker
-  secrets:
-    - docker_password
-  environment:
-    - DOCKER_USERNAME=ukhomeofficedigital+acp_clamav
-  registry: quay.io
-  repo: quay.io/ukhomeofficedigital/acp_clamav
-  workdir: clamav
-  tags:
-    - ${DRONE_COMMIT_SHA}
+pipeline:
+  clamav_image_to_quay:
+    image: quay.io/ukhomeofficedigital/drone-docker
+    secrets:
+      - docker_password
+    environment:
+      - DOCKER_USERNAME=ukhomeofficedigital+acp_clamav
+    registry: quay.io
+    repo: quay.io/ukhomeofficedigital/acp_clamav
+    workdir: clamav
+    tags:
+      - ${DRONE_COMMIT_SHA}
